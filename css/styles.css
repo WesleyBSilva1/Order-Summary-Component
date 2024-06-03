@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display',serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-color: var(--pale-blue);
+}
+.container{
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius:.9rem;
+    padding-bottom: 1rem;
+    background-color:#FFFFFF;
+}
+.card img{
+    border-radius: .9rem .9rem 0 0;
+}
+.card_title{
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: .7rem;
+    color: var(--dark-blue);
+}
+.card_text{
+    color: var(--desaturated-blue);
+    text-align: center;
+    padding-top: .8rem;
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+
+.plan_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background-color: var(--very-pale-blue);
+    border-radius: .9rem;
+    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.plan{
+    display: flex;
+    
+}
+.plan_info{
+    padding-left: 1rem;
+    color: var(--dark-blue);
+
+}
+.plan_info p{
+    color: var(--desaturated-blue);
+}
+.plan_card a{
+    font-weight: 700;
+}
+.plan_card a:hover{
+    color:#766CF1 ;
+}
+.btn_pay{
+    margin: auto;
+    background-color: var(--bright-blue);
+    border: 0;
+    border-radius: .8rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    color: white;
+    font-weight: 900;
+    width: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.btn_pay:hover{
+    background-color:#766CF1;
+    cursor: pointer;
+}
+.btn_cancel{
+    font-size: .9rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    margin: auto;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    width: 80%;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.btn_cancel:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,0%);
+    font-size: .9rem;
+    margin-bottom: .8rem;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
+}
+@media only screen and (max-width:600px) {
+    .container{
+        width: 330px;
+    }
+    .card img{
+        width: 330px;
+    }
+    footer{
+        text-align: center;
+    }
+    span{
+        display: inline-block;
+    }
+    .plan_card{
+        padding: .9rem;
+    }
+}
