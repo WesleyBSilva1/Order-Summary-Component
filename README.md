@@ -1,4 +1,4 @@
-Frontend Mentor - QR code component
+Frontend Mentor - Order Summary component
 Bem-vindo! 👋
 Esse desafio foi retirado do site FrontEndMentors.
 
